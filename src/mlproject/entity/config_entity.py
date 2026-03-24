@@ -17,3 +17,12 @@ class DataValidationConfig:
     unzip_data_dir: Path
     STATUS_FILE: str
     all_schema: dict
+    
+from dataclasses import dataclass
+from pathlib import Path
+
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    
